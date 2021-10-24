@@ -1,0 +1,67 @@
+CCC Intermediate
+
+10/13
+Problem is subarray maximum sum and find time complexity of simple solution we implemented.
+
+This being
+A is a list of length n
+max = 0
+for l in O...n:
+	for r in l + 1 ... n + 1:
+		sm = 0 
+		for i in l ... r:
+			sm += A[i]
+		mx = max(mx, sm)
+
+In for loops, have something defined with left bound
+[0, n)
+Inclusive to exclusive
+
+What the hell is time complexity?!?!?!?!
+for loops = n time
+	But we can't do that because we have some nasty looking bounds.
+
+let m = length of a subarray. Then we get this complexity
+
+n : m * (operations) so in this case sm += A[i]
+
+
+1 : 1 5		1 * n
+2 : 2 4		2 * (n-1)
+3 : 3 3 	3 * (n-2)
+
+OR m * (n - (m - 1)) = # lets expand this tho
+m * (n - m + 1) = 
+mn - m^2 - m
+
+but let's split it up!
+
+Given value n?
+		n
+mn		1n
+	
+m^n 	2n
+
+m
+
+Logic
+
+sum is equal to 0 and max is
+
+10/20
+Went over pseudo code for a refined algorithm.
+
+mx = 0 
+cnt = 0 
+for i in range 0...n:
+	if cn
+
+MORE PROBLEMS
+Easy problem
+
+
+
+
+
+
+

@@ -71,6 +71,49 @@ sys.stdout = open("shell.out", "w")
 s = input()
 
 
+11/1
+
+Given a list A of n integers, determinte if there exists some x in A such that the number of X's > n/2.
+
+Constraints: Time O(n)
+Space O(1) auxiliary
+*program can only take
+
+Median of median algorithm.
+
+*divide and conquer approach*
+
+Other solution includes pairing unique numbers
+
+Pair the unique numbers and whatever number left over is x if x exists
+
+Once we get the median we iterate through the array to verify the x.
+
+Now to pair up the distinct numbers we need code for that.
+
+psuedo code!
+count = 1
+num = A[0]
+
+for i in 1...n:
+	if num == A[i]
+		count += 1
+	else:
+		count -= 1
+	if count == 0:
+		num = A[i]
+		count = 1
+
+After this for loop num will be the number left over and then we check this with 
+
+freq = 0
+for i in 0...n:
+if A[i] == num:
+freq += 1
+
+if freq > n/2, x exists
+
+
 
 
 

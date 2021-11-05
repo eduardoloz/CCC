@@ -17,11 +17,9 @@ for i in range(15):
 		count += 1
 		extra = i
 
-
-
 num = cycle + extra
 
-if (N % 8 == 0):
+if (N % 8 == 0): #stupid edge case
 	num -= 1
 
 print(num)

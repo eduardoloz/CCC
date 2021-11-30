@@ -1,15 +1,25 @@
 n, k = map(int, input().split((" ")))
 
-x = 0
+# Analysis
+#The val (x % k) is a factor of n. So, n % (x % k) == 0 at some value
 
-potential_solutions = 0
+# (x // k) * (x % k) = n
 
-x = k + n
+#therefore, n * k // i = a factor
 
-while ((x // k) * (x % k) != n):
-	x += 1
 
-print(x) 
+#CANNOT START AT K because then (x % k) = 0 - so k can't be factor of x
+
+
+for i in range(k-1, 0, -1):
+	if (n % i == 0):
+		print(n // i * k + i)
+		break
+
+
+#while ((x // k) * (x % k) != n):
+#	x += 1
+
 
 #Why is this hard :(
 '''

@@ -44,3 +44,5 @@ for i in range(q):
 	a, b = map(int, input().split(' '))
 	difference = pref[b] - pref[a-1]
 	print(difference)
+
+	

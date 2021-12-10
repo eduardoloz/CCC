@@ -8,7 +8,7 @@ with open('December1.txt') as file:
 		nums.append(int(line))
 		if int(line) > current:
 			count += 1
-			print(int(line), current)
+			#print(int(line), current)
 		current = int(line)
 		
 print(count)

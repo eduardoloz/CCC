@@ -13,12 +13,8 @@ with open('December2.txt') as file:
 			ycount -= int(line[1])
 		if line[0] == "up":
 			ycount += int(line[1])
-		print(xcount)
-		print(ycount)
 
 print(xcount * abs(ycount))
-
-print(read)
 
 position = 0
 depth = 0

@@ -18,8 +18,7 @@ xcount = 0
 ycount = 0
 
 for i in range(6):
-	instructions = str(input())
-	instructions = instructions.split(" ")
+	
 	print(instructions)
 	'''
 	if line[0] == "foward":
